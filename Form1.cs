@@ -97,6 +97,9 @@ namespace mengedu
             dataGridView2.DataSource = ds1.Tables[0];
 
             tabControl1.TabPages[2].Text = comboBox2.Text + "可选学校";
+            
+            
+            tabControl1.TabPages[4].Text = comboBox2.Text + "分数差可选学校";
 
 
             str_cmd = "select score, pnum,score, COALESCE(pnum1,0) as pnum1, COALESCE(pnum2,0) as pnum2,"
